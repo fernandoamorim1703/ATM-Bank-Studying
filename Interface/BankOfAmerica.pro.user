@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.1, 2021-04-14T15:42:46. -->
+<!-- Written by QtCreator 4.13.1, 2021-04-14T19:48:05. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -323,8 +323,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/obscureart/ProjectsQT/ATM-Bank-Studying/BankOfAmerica.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/obscureart/ProjectsQT/ATM-Bank-Studying/BankOfAmerica.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">BankOfAmerica2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/obscureart/ProjectsQT/ATM-Bank-Studying/Interface/BankOfAmerica.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/obscureart/ProjectsQT/ATM-Bank-Studying/Interface/BankOfAmerica.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
