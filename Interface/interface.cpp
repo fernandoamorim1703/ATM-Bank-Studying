@@ -13,6 +13,8 @@ interface::interface(QWidget *parent) :
     ui(new Ui::interface)
 {
     ui->setupUi(this);
+    connect(ui->inserir,SIGNAL(clicked()),this,SLOT(inserir()));
+    connect(ui->showAll,SIGNAL(clicked()),this,SLOT(showAll()));
 }
 
 interface::~interface()
@@ -21,7 +23,7 @@ interface::~interface()
 }
 
 
-void interface::on_inserir_clicked()
+void interface::inserir()
 {
     PersonAccount *conta2 = new PersonAccount();
 
@@ -48,8 +50,9 @@ void interface::on_inserir_clicked()
 
 }
 
-void interface::on_cancelar_clicked()
+void interface::showAll()
 {
+    ui->textEdit->clear();
     char tipoAccount[10];
     QString data = ui->textEdit->toPlainText();
     for(size_t i=0;i<accounts2.size();i++){

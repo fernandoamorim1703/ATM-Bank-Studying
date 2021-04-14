@@ -128,7 +128,7 @@
      </spacer>
     </item>
     <item>
-     <widget class="QPushButton" name="cancelar">
+     <widget class="QPushButton" name="showAll">
       <property name="text">
        <string>Mostrar Usuarios</string>
       </property>

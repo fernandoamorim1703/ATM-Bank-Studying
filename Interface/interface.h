@@ -18,8 +18,8 @@ public:
 private:
     Ui::interface *ui;
 private slots:
-    void on_inserir_clicked();
-    void on_cancelar_clicked();
+    void inserir();
+    void showAll();
 };
 
 #endif // INTERFACE_H
