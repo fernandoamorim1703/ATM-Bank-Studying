@@ -3,12 +3,17 @@ QT += widgets
 SOURCES += \
         interface.cpp \
         main.cpp \
-        optionsaccount.cpp
+        openaccount.cpp \
+        showaccounts.cpp
+
 
 HEADERS += \
     interface.h \
-    optionsaccount.h \
-    personaccount.h
+    openaccount.h \
+    personaccount.h \
+    showaccounts.h
 
 FORMS += \
-    interface.ui
+    interface.ui \
+    openaccount.ui \
+    showaccounts.ui

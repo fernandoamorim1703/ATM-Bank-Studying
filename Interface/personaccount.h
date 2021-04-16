@@ -1,5 +1,6 @@
 #ifndef PERSONACCOUNT_H
 #define PERSONACCOUNT_H
+#include<vector>
 
 class PersonAccount{
     public:
