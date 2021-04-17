@@ -9,7 +9,7 @@ class PersonAccount{
         long cpf;
         int nascimento;
         char email[50];
-        int typeAccount;
+        char typeAccount[50];
         long saldo;
 };
 

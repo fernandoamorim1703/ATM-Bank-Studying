@@ -1,10 +1,12 @@
 #include"personaccount.h"
 #include "interface.h"
+#include"accountvector.h"
 
 #include<stdio.h>
 #include<stdlib.h>
 #include <QApplication>
 
+AccountVector *accounts = new AccountVector();
 
 int main(int argc, char *argv[])
  {

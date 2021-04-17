@@ -1,12 +1,11 @@
 #include "openaccount.h"
 #include"personaccount.h"
 #include "ui_openaccount.h"
+#include"accountvector.h"
 #include "interface.h"
 #include <stdio.h>
 #include <string.h>
-
-std::vector<PersonAccount> accounts;
-
+#include<QDebug>
 
 openAccount::openAccount(QWidget *parent) :
     QDialog(parent),
@@ -23,37 +22,44 @@ openAccount::~openAccount()
 
 void openAccount::btnCreateAccount()
 {
-    PersonAccount conta;// = new PersonAccount();
+    PersonAccount conta;
 
     QString name (ui->editName->text());
     QString email (ui->EditEmail->text());
-    int idade=ui->editIdade->text().toInt();
-    int cpf=ui->editCpf->text().toInt();
+    int idade = ui->editIdade->text().toInt();
+    long cpf=ui->editCpf->text().toLong();
     int nascimento=ui->editNascimento->text().toInt();
-    int tipoConta;
-    if(ui->radioCorrente->isChecked()){
-        tipoConta=1;
-    }else if (ui->radioPoupanca->isChecked()) {
-        tipoConta=2;
+    if(ui->radioCorrente->isChecked()==true){
+        strcpy(conta.typeAccount,"Corrente");
+    }else if (ui->radioPoupanca->isChecked()==true) {
+        strcpy(conta.typeAccount,"Poupanca");
     }else {
-        tipoConta=3;
+        strcpy(conta.typeAccount,"Jurídica");
     }
-    char nome,mail;
-    strcpy(&nome,name.toLatin1());
-    strcpy(&mail,email.toLatin1());
 
-    strcpy(conta.nome,&nome);
     conta.idade=idade;
     conta.cpf=cpf;
     conta.nascimento=nascimento;
-    strcpy(conta.email,&mail);
-    conta.typeAccount=tipoConta;
-    accounts.push_back(conta);
 
-    ui->editName->clear();
+    char nome;
+
+    strcpy(&nome,name.toLatin1());
+    strcpy(conta.nome,&nome);
+
+    char mail;
+
+    strcpy(&mail,email.toLatin1());
+    strcpy(conta.email,&mail);
+
+    qDebug() << conta.nome;
+
+
+    AccountVector::instance()->accounts.push_back(conta);
+
+   /* ui->editName->clear();
     ui->editCpf->clear();
     ui->editNascimento->clear();
     ui->EditEmail->clear();
-    ui->editIdade->clear();
-    close();
+    ui->editIdade->clear();*/
+    //close();
 }

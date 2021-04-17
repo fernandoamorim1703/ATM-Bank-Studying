@@ -6,109 +6,151 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>394</width>
-    <height>265</height>
+    <width>292</width>
+    <height>302</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="gridLayoutWidget">
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>0</y>
+     <width>221</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="editName"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="editIdade"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="editCpf"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="editNascimento"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="EditEmail"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>391</width>
-     <height>261</height>
+     <width>72</width>
+     <height>191</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Idade</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>Nascimento</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>Tipo Conta</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QRadioButton" name="radioCorrente">
-      <property name="text">
-       <string>Corrente</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>CPF</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>Email</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
      <widget class="QLabel" name="label">
       <property name="text">
        <string>Nome</string>
       </property>
      </widget>
     </item>
-    <item row="5" column="2">
-     <widget class="QRadioButton" name="radioPoupanca">
+    <item>
+     <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>Poupança</string>
+       <string>Idade</string>
       </property>
      </widget>
     </item>
-    <item row="5" column="3">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>CPF</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Nascimento</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>220</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
      <widget class="QRadioButton" name="radioJuridica">
       <property name="text">
        <string>Jurídica</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="1" colspan="3">
-     <widget class="QLineEdit" name="EditEmail"/>
-    </item>
-    <item row="3" column="1" colspan="3">
-     <widget class="QLineEdit" name="editNascimento"/>
-    </item>
-    <item row="2" column="1" colspan="3">
-     <widget class="QLineEdit" name="editCpf"/>
-    </item>
-    <item row="1" column="1" colspan="3">
-     <widget class="QLineEdit" name="editIdade"/>
-    </item>
-    <item row="0" column="1" colspan="3">
-     <widget class="QLineEdit" name="editName"/>
-    </item>
-    <item row="6" column="1" colspan="3">
-     <widget class="QPushButton" name="btnCreateAccount">
+    <item>
+     <widget class="QRadioButton" name="radioPoupanca">
       <property name="text">
-       <string>Criar conta</string>
+       <string>Poupança</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioCorrente">
+      <property name="text">
+       <string>Corrente</string>
       </property>
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>190</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Tipo Conta</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnCreateAccount">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>270</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Criar conta</string>
+   </property>
   </widget>
  </widget>
  <resources/>
