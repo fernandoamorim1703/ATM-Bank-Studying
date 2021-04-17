@@ -30,36 +30,20 @@ void openAccount::btnCreateAccount()
     long cpf=ui->editCpf->text().toLong();
     int nascimento=ui->editNascimento->text().toInt();
     if(ui->radioCorrente->isChecked()==true){
-        strcpy(conta.typeAccount,"Corrente");
+        conta.typeAccount="Corrente";
     }else if (ui->radioPoupanca->isChecked()==true) {
-        strcpy(conta.typeAccount,"Poupanca");
+        conta.typeAccount="Poupança";
     }else {
-        strcpy(conta.typeAccount,"Jurídica");
+        conta.typeAccount="Jurídica";
     }
 
     conta.idade=idade;
     conta.cpf=cpf;
     conta.nascimento=nascimento;
-
-    char nome;
-
-    strcpy(&nome,name.toLatin1());
-    strcpy(conta.nome,&nome);
-
-    char mail;
-
-    strcpy(&mail,email.toLatin1());
-    strcpy(conta.email,&mail);
-
-    qDebug() << conta.nome;
-
+    conta.nome=name;
+    conta.email=email;
 
     AccountVector::instance()->accounts.push_back(conta);
 
-   /* ui->editName->clear();
-    ui->editCpf->clear();
-    ui->editNascimento->clear();
-    ui->EditEmail->clear();
-    ui->editIdade->clear();*/
-    //close();
+    close();
 }

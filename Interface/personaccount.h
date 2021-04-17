@@ -1,15 +1,15 @@
 #ifndef PERSONACCOUNT_H
 #define PERSONACCOUNT_H
 #include<vector>
-
+#include<QString>
 class PersonAccount{
     public:
-        char nome[40];
+        QString nome;
         int idade;
         long cpf;
         int nascimento;
-        char email[50];
-        char typeAccount[50];
+        QString email;
+        QString typeAccount;
         long saldo;
 };
 
