@@ -2,12 +2,13 @@
 #define PERSONACCOUNT_H
 #include<vector>
 #include<QString>
+#include<QDate>
 class PersonAccount{
     public:
         QString nome;
         int idade;
         long cpf;
-        int nascimento;
+        QDate nascimento;
         QString email;
         QString typeAccount;
         long saldo;

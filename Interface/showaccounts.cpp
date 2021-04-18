@@ -21,7 +21,7 @@ void showaccounts::showAllAccounts()
     if((AccountVector::instance()->accounts.size()) > 0){
         for(size_t i=0;i<AccountVector::instance()->accounts.size();i++){
             account.append("----Conta "+ QString(AccountVector::instance()->accounts[i].typeAccount) + "-----");
-            account.append("\nNome: " + QString (AccountVector::instance()->accounts[i].nome) + "\nIdade: " + QString::number(AccountVector::instance()->accounts[i].idade) + "\nNascimento: " + QString::number(AccountVector::instance()->accounts[i].nascimento) + "\nCPF: " + QString::number(AccountVector::instance()->accounts[i].cpf) + "\nEmail: " + QString (AccountVector::instance()->accounts[i].email));
+            account.append("\nNome: " + QString (AccountVector::instance()->accounts[i].nome) + "\nIdade: " + QString::number(AccountVector::instance()->accounts[i].idade) + "\nNascimento: " +  AccountVector::instance()->accounts[i].nascimento.day() +"/"+ AccountVector::instance()->accounts[i].nascimento.month() +"/"+AccountVector::instance()->accounts[i].nascimento.year() + "\nCPF: " + QString::number(AccountVector::instance()->accounts[i].cpf) + "\nEmail: " + QString (AccountVector::instance()->accounts[i].email));
             account.append("\n-----------------");
         }
     }

@@ -24,11 +24,12 @@ void openAccount::btnCreateAccount()
 {
     PersonAccount conta;
 
+
     conta.nome=ui->editName->text();
     conta.email=ui->EditEmail->text();
     conta.idade=ui->editIdade->text().toInt();
     conta.cpf=ui->editCpf->text().toLong();
-    conta.nascimento=ui->editNascimento->text().toInt();
+    conta.nascimento=ui->dateNascimento->date();
     if(ui->radioCorrente->isChecked()==true){
         conta.typeAccount="Corrente";
     }else if (ui->radioPoupanca->isChecked()==true) {

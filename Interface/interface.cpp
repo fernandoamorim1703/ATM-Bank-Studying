@@ -13,6 +13,7 @@ interface::interface(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->btnMainCreatAccount,SIGNAL(clicked()),this,SLOT(btnMainCreatAccount()));
     connect(ui->btnShowAllAccounts,SIGNAL(clicked()),this,SLOT(btnShowAllAccounts()));
+    connect(ui->btnSeeAccount,SIGNAL(clicked()),this,SLOT(btnSeeAccount()));
 }
 
 interface::~interface()
@@ -34,4 +35,11 @@ void interface::btnShowAllAccounts()
     sa = new showaccounts(this);
     sa->setModal(true);
     sa->show();
+}
+
+void interface::btnSeeAccount()
+{
+    ia = new infoAccount(this);
+    ia->setModal(true);
+    ia->show();
 }

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Open Account</string>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -33,7 +33,7 @@
      <widget class="QLineEdit" name="editCpf"/>
     </item>
     <item>
-     <widget class="QLineEdit" name="editNascimento"/>
+     <widget class="QDateEdit" name="dateNascimento"/>
     </item>
     <item>
      <widget class="QLineEdit" name="EditEmail"/>
@@ -46,7 +46,7 @@
      <x>0</x>
      <y>0</y>
      <width>72</width>
-     <height>191</height>
+     <height>181</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
