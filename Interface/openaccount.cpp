@@ -24,11 +24,11 @@ void openAccount::btnCreateAccount()
 {
     PersonAccount conta;
 
-    QString name (ui->editName->text());
-    QString email (ui->EditEmail->text());
-    int idade = ui->editIdade->text().toInt();
-    long cpf=ui->editCpf->text().toLong();
-    int nascimento=ui->editNascimento->text().toInt();
+    conta.nome=ui->editName->text();
+    conta.email=ui->EditEmail->text();
+    conta.idade=ui->editIdade->text().toInt();
+    conta.cpf=ui->editCpf->text().toLong();
+    conta.nascimento=ui->editNascimento->text().toInt();
     if(ui->radioCorrente->isChecked()==true){
         conta.typeAccount="Corrente";
     }else if (ui->radioPoupanca->isChecked()==true) {
@@ -37,11 +37,6 @@ void openAccount::btnCreateAccount()
         conta.typeAccount="Jurídica";
     }
 
-    conta.idade=idade;
-    conta.cpf=cpf;
-    conta.nascimento=nascimento;
-    conta.nome=name;
-    conta.email=email;
 
     AccountVector::instance()->accounts.push_back(conta);
 
